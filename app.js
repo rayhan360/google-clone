@@ -1,3 +1,8 @@
+const toggleMenu = () => {
+    const dropdown = document.getElementById('myDropdown');
+    dropdown.style.display = (dropdown.style.display === 'none' || dropdown.style.display === '') ? 'block' : 'none'
+}
+
 const googleSearch = (e) => {
     e.preventDefault();
     const prompt = document.getElementById("search").value;

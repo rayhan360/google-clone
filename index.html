@@ -1,40 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/9818622648.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9818622648.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
         <div class="menu-items">
-            <img class="menu-icon" src="images/app-menu.png" alt="">
-            <i class="fas fa-user-circle" style="color: #fcfcfc;"></i>
-        </div>
+            <div>
+              <img id="menu-btn" onclick="toggleMenu()" class="menu-icon" src="images/app-menu.png" alt="" />
+              <div class="dropdown-menu" id="myDropdown">
+                <div class="all-items">
+                    <div class="dropdown-item">
+                        <img src="images/google/gamil.png" alt="">
+                        <p>Gmail</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/account.png" alt="">
+                        <p>Account</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/google.png" alt="">
+                        <p>Search</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/maps.png" alt="">
+                        <p>Maps</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/playstore.svg" alt="">
+                        <p>PLay Store</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/news.png" alt="">
+                        <p>News</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/meet.png" alt="">
+                        <p>Meet</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/chat.png" alt="">
+                        <p>Chat</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/contact.png" alt="">
+                        <p>contact</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/drive.png" alt="">
+                        <p>Drive</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/calender.png" alt="">
+                        <p>Calender</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/translate.png" alt="">
+                        <p>Translate</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/photos.png" alt="">
+                        <p>Photos</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/add-center.png" alt="">
+                        <p>My Add</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <img src="images/google/shopping.png" alt="">
+                        <p>Shopping</p>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+            <i class="fas fa-user-circle" style="color: #fcfcfc"></i>
+          </div>
     </header>
 
     <main>
-        <div>
-            <img src="images/google.png" alt="Google Logo">
-        </div>
-        <section>
-            <form onsubmit="googleSearch(event);">
-                <img class="icons-size" src="images/search.png" alt="Search Icon">
-                <input type="text" name="" id="search" placeholder="Google Search">
-                <img title="search by voice" class="icons-size" src="images/Google_mic.png" alt="Google Mic Icon">
-                <img title="search by image" class="icons-size1" src="images/imageSearch.png" alt="Image Search Icon">
-            </form>
+      <div>
+        <img src="images/google.png" alt="Google Logo" />
+      </div>
+      <section>
+        <form onsubmit="googleSearch(event);">
+          <img class="icons-size" src="images/search.png" alt="Search Icon" />
+          <input type="text" name="" id="search" placeholder="Google Search" />
+          <img
+            title="search by voice"
+            class="icons-size"
+            src="images/Google_mic.png"
+            alt="Google Mic Icon"
+          />
+          <img
+            title="search by image"
+            class="icons-size1"
+            src="images/imageSearch.png"
+            alt="Image Search Icon"
+          />
+        </form>
 
-            <section class="buttons">
-                <button onclick="googleSearch(event)" class="btn-1">Google Search</button>
-                <button class="btn-1">I'm Feeling Lucky</button>
-            </section>
+        <section class="buttons">
+          <button onclick="googleSearch(event)" class="btn-1">
+            Google Search
+          </button>
+          <button class="btn-1">I'm Feeling Lucky</button>
         </section>
+      </section>
     </main>
 
     <footer></footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
