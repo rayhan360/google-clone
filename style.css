@@ -9,11 +9,21 @@ header {
     justify-content: flex-end;
 }
 
+.heading-text{
+    font-size: 20px;
+    color: white;
+    margin-top: 25x;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 
 .menu-items {
     display: flex;
     gap: 20px;
     font-size: 30px;
+    align-items: center;
 }
 
 .menu-icon {
@@ -116,6 +126,7 @@ input {
     font-size: 15px;
     background-color: #fff;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 
