@@ -4,17 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
+    <!-- custom css link -->
     <link rel="stylesheet" href="style.css" />
+    <!-- favicon icons -->
+    <link
+      rel="shortcut icon"
+      href="/images/google/google.png"
+      type="image/x-icon"
+    />
+    <!-- font awesome icons link -->
     <script
       src="https://kit.fontawesome.com/9818622648.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- Heading Section -->
     <header>
       <div class="menu-items">
-        <a href="https://mail.google.com/mail/u/0/#inbox"><p class="heading-text">Gamil</p></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"
+          ><p class="heading-text">Gamil</p></a
+        >
         <p class="heading-text">Image</p>
+        <!-- menu items section -->
         <div>
           <img
             id="menu-btn"
@@ -23,6 +35,7 @@
             src="images/app-menu.png"
             alt=""
           />
+          <!-- menu items dropt menu -->
           <div class="dropdown-menu" id="myDropdown">
             <div class="all-items">
               <a href="https://mail.google.com/mail/u/0/#inbox">
@@ -90,6 +103,7 @@
             </div>
           </div>
         </div>
+        <!-- heading profile icons is here -->
         <i
           class="fas fa-user-circle"
           style="color: #fcfcfc; cursor: pointer; margin-bottom: 5px"
@@ -98,9 +112,11 @@
     </header>
 
     <main>
+      <!-- google logo is here -->
       <div>
         <img src="images/google.png" alt="Google Logo" />
       </div>
+      <!-- google search engine form is here -->
       <section>
         <form onsubmit="googleSearch(event);">
           <img class="icons-size" src="images/search.png" alt="Search Icon" />
@@ -118,17 +134,22 @@
             alt="Image Search Icon"
           />
         </form>
-
+        <!-- google search buttoon and extra additional button like google is here -->
         <section class="buttons">
           <button onclick="googleSearch(event)" class="btn-1">
             Google Search
           </button>
-          <a href="https://doodles.google/"><button class="btn-1">I'm Feeling Lucky</button></a>
+          <a href="https://doodles.google/"
+            ><button class="btn-1">I'm Feeling Lucky</button></a
+          >
         </section>
       </section>
     </main>
 
     <footer></footer>
+
+    
+    <!-- external javascript -->
     <script src="app.js"></script>
   </body>
 </html>

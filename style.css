@@ -1,8 +1,10 @@
+/* main website body common design pattern */
 body {
     background-color: #202124;
     margin: 0;
 }
 
+/* heading section css start */
 header {
     margin: 20px;
     display: flex;
@@ -71,6 +73,10 @@ header {
     border-bottom: none;
 }
 
+/* heading section css ends */
+
+
+/* main body section css starts */
 main {
     display: flex;
     flex-direction: column;
@@ -114,6 +120,9 @@ input {
     cursor: pointer;
 }
 
+/* main body section css ends */
+
+/* additional buttons css */
 .buttons {
     display: flex;
     justify-content: center;
@@ -130,6 +139,7 @@ input {
 }
 
 
+/* responsivenes media query css code here */
 @media screen and (max-width: 768px) {
 
     .dropdown-menu {

@@ -1,3 +1,4 @@
+// drop down menu script code
 const toggleMenu = () => {
   const dropdown = document.getElementById("myDropdown");
   dropdown.style.display =
@@ -6,6 +7,8 @@ const toggleMenu = () => {
       : "none";
 };
 
+
+// google search engine code
 const googleSearch = (e) => {
   e.preventDefault();
   const prompt = document.getElementById("search").value;
